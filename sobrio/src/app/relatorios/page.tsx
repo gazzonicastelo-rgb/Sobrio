@@ -7,6 +7,7 @@ import {
   User,
   Users,
 } from "lucide-react";
+import Link from "next/link";
 
 const streakDays = [
   1, 1, 0, 1, 1, 1, 0,
@@ -101,40 +102,40 @@ export default function RelatoriosPage() {
       <nav className="fixed inset-x-0 bottom-0 mx-auto w-full max-w-md border-t border-white/10 bg-[#0a0714]/95 px-3 pb-3 pt-2 backdrop-blur">
         <ul className="grid grid-cols-4 gap-1">
           <li>
-            <button
-              type="button"
+            <Link
+              href="/dashboard"
               className="flex w-full flex-col items-center rounded-xl px-2 py-2 text-[11px] text-muted transition hover:bg-surface-soft hover:text-white"
             >
               <Home className="mb-1 h-4 w-4" />
               Inicio
-            </button>
+            </Link>
           </li>
           <li>
-            <button
-              type="button"
+            <Link
+              href="/relatorios"
               className="flex w-full flex-col items-center rounded-xl bg-surface px-2 py-2 text-[11px] text-neo-mint"
             >
               <ChartColumn className="mb-1 h-4 w-4" />
               Relatorios
-            </button>
+            </Link>
           </li>
           <li>
-            <button
-              type="button"
+            <Link
+              href="#"
               className="flex w-full flex-col items-center rounded-xl px-2 py-2 text-[11px] text-muted transition hover:bg-surface-soft hover:text-white"
             >
               <Users className="mb-1 h-4 w-4" />
               Comunidade
-            </button>
+            </Link>
           </li>
           <li>
-            <button
-              type="button"
+            <Link
+              href="#"
               className="flex w-full flex-col items-center rounded-xl px-2 py-2 text-[11px] text-muted transition hover:bg-surface-soft hover:text-white"
             >
               <User className="mb-1 h-4 w-4" />
               Perfil
-            </button>
+            </Link>
           </li>
         </ul>
       </nav>
