@@ -7,6 +7,7 @@ import {
   Users,
   Wallet,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function DashboardPage() {
   const cleanDays = 42;
@@ -118,13 +119,13 @@ export default function DashboardPage() {
             </button>
           </li>
           <li>
-            <button
-              type="button"
+            <Link
+              href="/relatorios"
               className="flex w-full flex-col items-center rounded-xl px-2 py-2 text-[11px] text-muted transition hover:bg-surface-soft hover:text-white"
             >
               <ChartColumn className="mb-1 h-4 w-4" />
               Progresso
-            </button>
+            </Link>
           </li>
           <li>
             <button
