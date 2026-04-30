@@ -1,4 +1,5 @@
 import { ArrowRight, ShieldCheck } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -26,13 +27,13 @@ export default function Home() {
           </ul>
         </div>
 
-        <button
-          type="button"
+        <Link
+          href="/cadastro"
           className="flex w-full items-center justify-center gap-2 rounded-xl bg-electric-blue px-4 py-3 text-sm font-semibold text-white transition hover:opacity-90"
         >
           Continuar configuração
           <ArrowRight className="h-4 w-4" />
-        </button>
+        </Link>
       </section>
     </main>
   );
